@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+# hub command line
+eval "$(hub alias -s)"
+alias pr='hub pull-request'
+
+# Git shortcuts
+alias add='git add'
+alias checkout='git checkout'
+alias cm='git commit'
+alias co='git checkout'
+alias cob='git checkout -b'
+alias commit='git commit'
+alias diff='git difftool'
+alias merge='git merge'
+alias ph='git push'
+alias pu='git pull'
+alias pull='git pull'
+alias push='git push'
+alias st='git status'
+alias stat='git status'
+alias status='git status'

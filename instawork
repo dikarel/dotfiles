@@ -1,0 +1,44 @@
+#!/usr/bin/env sh
+
+# 2-letter shortcuts
+alias aa='echo AsanaAsana && open https://app.asana.com/0/269963204484929/list'
+alias bb='echo BookBook && yarn storybook'
+alias bp='echo BashProfile && code ~/.bash_profile'
+alias ee='echo EditEdit && code'
+alias ff='echo FreshFresh && yarn start:fresh'
+alias gg='echo GenGen && yarn generate'
+alias gh='echo GitHub && open https://github.com/instawork/mobile'
+alias ii='echo InstallInstall && yarn install --force'
+alias pp='echo PullPull && git pull'
+alias rr='echo RunRun && yarn run:ios'
+alias ss='echo StartStart && yarn start'
+alias tt='echo TestTest && yarn test'
+alias xx='echo ExitExit && exit'
+alias hh='echo PushPush && git push'
+
+# Compound shortcuts
+alias com='checkout master && pull'
+alias ggbb='gg && bb'
+alias ggff='gg && ff'
+alias ggss='gg && ss'
+alias ggtt='gg && tt'
+alias gmom='git pull && git merge origin/master'
+alias hhxx='hh && xx'
+alias igb='ii && gg && bb'
+alias igf='ii && gg && ff'
+alias igt='ii && gg && tt'
+alias iig='ii && g'
+alias rrxx='rr && xx'
+
+# Yarn commands
+alias fresh='yarn start:fresh'
+alias generate='yarn generate'
+alias lint='yarn test:lint'
+alias release='yarn run:android:release'
+alias start='yarn start'
+alias story='yarn storybook'
+alias test='yarn test'
+
+# System commands
+alias stop='echo Killing all dev processes && killall flow esprint node watchman'
+alias clean='yarn cache clean && npm cache clean --force'
