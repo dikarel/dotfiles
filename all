@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
 # This repo is organized by topic
-source $(DOTFILES_DIR)/git
-source $(DOTFILES_DIR)/instawork
-source $(DOTFILES_DIR)/random
+source ${DOTFILES_DIR}/git
+source ${DOTFILES_DIR}/instawork
+source ${DOTFILES_DIR}/random
 
 # Things that don't belong in any of the above topics live here
 export ANDROID_HOME='/Users/dikarel/Library/Android/sdk'

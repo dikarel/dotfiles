@@ -12,5 +12,5 @@ git clone https://github.com/dikarel/dotfiles
 ```
 # Initialize dotfiles
 export DOTFILES_DIR=~/Desktop/dotfiles
-source $(DOTFILES_DIR)/all
+source ${DOTFILES_DIR}/all
 ```
