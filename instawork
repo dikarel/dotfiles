@@ -17,6 +17,7 @@ alias clean='yarn cache clean && npm cache clean --force'
 
 # Mnemonics
 alias bb='story'
+alias cl='clear'
 alias ff='fresh'
 alias gg='generate'
 alias ggbb='gg && bb'
