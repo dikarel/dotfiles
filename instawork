@@ -20,6 +20,7 @@ alias new-pull-request='open https://github.com/Instawork/mobile/compare/$(git r
 alias pulls='open https://github.com/instawork/mobile/pulls'
 alias sprint-board='open https://app.asana.com/0/244065166232575/board'
 alias sprint='open https://app.asana.com/0/244065166232575/board'
+alias upcoming='open https://app.asana.com/0/518926233438259/list'
 
 # System commands
 alias clean='yarn cache clean && npm cache clean --force'
