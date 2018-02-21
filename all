@@ -10,5 +10,5 @@ source ${DOTFILES_DIR}/sleep
 export ANDROID_HOME='/Users/dikarel/Library/Android/sdk'
 export COCOAPODS_DISABLE_STATS=1
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dikarel/Library/Android/sdk/tools:/Users/dikarel/Library/Android/sdk/platform-tools:/Users/dikarel/.vimpkg/bin:/Users/dikarel/flutter/bin:$PATH
+export PATH=/usr/local/opt/gettext/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dikarel/Library/Android/sdk/tools:/Users/dikarel/Library/Android/sdk/platform-tools:/Users/dikarel/.vimpkg/bin:/Users/dikarel/flutter/bin:$PATH
 export PS1="\w: "

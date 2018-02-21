@@ -23,7 +23,7 @@ alias sprint='open https://app.asana.com/0/244065166232575/board'
 alias upcoming='open https://app.asana.com/0/518926233438259/list'
 
 # System commands
-alias clean='yarn cache clean && npm cache clean --force'
+alias clean='rm -rf /Users/dikarel/Library/Caches/Yarn /Users/dikarel/Library/Developer/Xcode/DerivedData'
 alias dotfiles='code ~/Desktop/dotfiles'
 alias slack='open /Applications/Slack.app'
 alias slak='open /Applications/Slack.app'
