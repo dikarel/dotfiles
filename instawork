@@ -1,12 +1,17 @@
 #!/usr/bin/env sh
 
 # Yarn commands
+alias android-emulator-5='cd $ANDROID_HOME/tools && ./emulator -avd 5.1_Lollipop'
+alias android-emulator-6='cd $ANDROID_HOME/tools && ./emulator -avd 6.0_Marshmallow'
+alias android-emulator-7='cd $ANDROID_HOME/tools && ./emulator -avd 7.1.1_Nougat'
+alias android-emulator-8='cd $ANDROID_HOME/tools && ./emulator -avd 8.0_Nougat'
 alias fresh='yarn start:fresh'
 alias generate='yarn generate'
 alias install='yarn sync'
 alias lint='yarn test:lint'
 alias release='yarn run:android:release'
 alias run='yarn run:ios'
+alias shake='adb shell input keyevent 82'
 alias start='yarn start'
 alias storybook='yarn storybook'
 alias test='yarn test'
@@ -30,7 +35,14 @@ alias slak='open /Applications/Slack.app'
 alias stop='echo Killing all dev processes && killall flow esprint node watchman'
 alias zeplin='open /Applications/Zeplin.app'
 
+# Work routine
+alias gohome='stop && clean && brew upgrade && brew cleanup && sudo shutdown -h now'
+
 # Mnemonics
+alias an5='android-emulator-5'
+alias an6='android-emulator-6'
+alias an7='android-emulator-7'
+alias an8='android-emulator-8'
 alias bb='storybook'
 alias cl='clear'
 alias ff='fresh'
@@ -44,6 +56,7 @@ alias ii='install'
 alias iigg='ii && gg'
 alias iiggbb='ii && gg && bb'
 alias iiggff='ii && gg && ff'
+alias iiggss='ii && gg && ss'
 alias iiggtt='ii && gg && tt'
 alias pr='new-pull-request'
 alias rr='run'
