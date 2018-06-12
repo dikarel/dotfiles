@@ -37,6 +37,7 @@ alias zeplin='open /Applications/Zeplin.app'
 
 # Work routine
 alias gohome='stop && clean && brew upgrade && brew cleanup && sudo shutdown -h now'
+alias migrate='python manage.py migrate'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 alias venv='source venv/bin/activate'
 
