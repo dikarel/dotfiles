@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-
-# Sleep commands
-alias sl1='sleep 60'
-alias sl2='sleep 120'
-alias sl3='sleep 180'
-alias sl4='sleep 240'
-alias sl5='sleep 300'

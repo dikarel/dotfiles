@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-# Offbeat utilities
-alias nyan='telnet miku.acm.uiuc.edu'
-alias starwars='telnet towel.blinkenlights.nl'
