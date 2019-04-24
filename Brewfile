@@ -18,6 +18,8 @@ brew "zlib"  # For installing Python with pyenv
 
 # Terminal enhancements
 brew "bash-completion"
+brew "bat"  # cat replacement
+brew "exa"  # ls replacement
 brew "git-radar"
 
 # Productivity
