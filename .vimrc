@@ -1,23 +1,24 @@
 call plug#begin()
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'ervandew/supertab'
   Plug 'itchyny/lightline.vim'
   Plug 'morhetz/gruvbox'
   Plug 'takac/vim-hardtime'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-sleuth'
-  Plug 'vim-scripts/vim-auto-save'
   Plug 'wincent/ferret'
-
-  Plug 'majutsushi/tagbar'
 
   " Looks cool; not using right now
   " Plug '/usr/local/opt/fzf'
   " Plug 'Valloric/YouCompleteMe'
   " Plug 'alvan/vim-closetag'
+  " Plug 'garbas/vim-snipmate'
   " Plug 'junegunn/fzf.vim'
+  " Plug 'majutsushi/tagbar'
   " Plug 'scrooloose/nerdtree'
   " Plug 'sickill/vim-monokai'
+  " Plug 'vim-scripts/vim-auto-save'
 
   " Would be great to use, but too slow
   " Plug 'tmhedberg/SimpylFold'
@@ -73,3 +74,5 @@ if executable('rg')
   let g:ctrlp_use_caching = 0
 endif
 
+" Force yourself to use vim correctly
+let g:hardtime_default_on = 1
