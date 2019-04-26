@@ -2,10 +2,14 @@ call plug#begin()
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'itchyny/lightline.vim'
   Plug 'morhetz/gruvbox'
+  Plug 'takac/vim-hardtime'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-sleuth'
+  Plug 'vim-scripts/vim-auto-save'
   Plug 'wincent/ferret'
+
+  Plug 'majutsushi/tagbar'
 
   " Looks cool; not using right now
   " Plug '/usr/local/opt/fzf'
@@ -19,8 +23,8 @@ call plug#begin()
   " Plug 'tmhedberg/SimpylFold'
 call plug#end()
 
-" Trim trailing whitespace
-autocmd BufWritePre * %s/\s\+$//e
+" Automate things I would do anyways
+autocmd BufWritePre * %s/\s\+$//e  " Trim trailing whitespace
 
 " Theming
 colorscheme gruvbox
@@ -38,11 +42,14 @@ set number " Show line numbers
 syntax on  " Syntax highlighting
 
 " Less gotchas, more intuitive behavior
+noremap U <C-R>        " Redo with Shift+U instead of CTRL+R
 set clipboard=unnamed  " Allow copy-pasting across different vim instances
 set foldlevelstart=20  " Don't start off with everything folded
 set nocompatible  " Enable vim-only features
 set shellcmdflag=-ic  " Allow Bash aliases to be run
 set shortmess+=I  " Turn off startup message
+set ignorecase  " Searches are case-insensitive by default
+set smartcase   " Searches are case-insensitive by default
 
 " Swapfiles are more trouble than they're worth. They're disruptive
 set noswapfile
@@ -65,3 +72,4 @@ if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ctrlp_use_caching = 0
 endif
+
