@@ -1,5 +1,5 @@
 # Secret keys
-export HOMEBREW_GITHUB_API_TOKEN="7061def2058a4fd9a9078c8cb3bd2e50e20663a2"
+. ~/.bash_secrets
 
 # More informative prompt
 export GIT_RADAR_FORMAT="(%{branch}) "
