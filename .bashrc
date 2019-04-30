@@ -1,5 +1,5 @@
 # Secret keys
-. ~/.bash_secrets
+. ~/.secrets
 
 # More informative prompt
 export GIT_RADAR_FORMAT="(%{branch}) "
@@ -55,8 +55,7 @@ alias ym='yarn migrate'
 alias b="brew"
 alias bi="brew install"
 alias ?='howdoi'
-alias bs='brew search'
-
+alias b?='brew search'
 ptest() {
   # Sample usage: ptest GigBizFeedbackFormTests
   # Requires code search tool "rg" (brew install rg)

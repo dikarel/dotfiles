@@ -1,20 +1,34 @@
 call plug#begin()
-  Plug 'ctrlpvim/ctrlp.vim'
+  Plug '/usr/local/opt/fzf'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'apalmer1377/factorus'
+  Plug 'docunext/closetag.vim'
   Plug 'ervandew/supertab'
   Plug 'itchyny/lightline.vim'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/vim-easy-align'
   Plug 'morhetz/gruvbox'
+  Plug 'sheerun/vim-polyglot'
   Plug 'takac/vim-hardtime'
+  Plug 'tpope/vim-abolish'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-sleuth'
+  Plug 'tpope/vim-surround'
+  Plug 'w0rp/ale'
   Plug 'wincent/ferret'
 
+  " This has been superseded by fzf
+  " Plug 'ctrlpvim/ctrlp.vim'
+
   " Looks cool; not using right now
-  " Plug '/usr/local/opt/fzf'
   " Plug 'Valloric/YouCompleteMe'
   " Plug 'alvan/vim-closetag'
   " Plug 'garbas/vim-snipmate'
-  " Plug 'junegunn/fzf.vim'
   " Plug 'majutsushi/tagbar'
   " Plug 'scrooloose/nerdtree'
   " Plug 'sickill/vim-monokai'
@@ -43,14 +57,14 @@ set number " Show line numbers
 syntax on  " Syntax highlighting
 
 " Less gotchas, more intuitive behavior
-noremap U <C-R>        " Redo with Shift+U instead of CTRL+R
-set clipboard=unnamed  " Allow copy-pasting across different vim instances
-set foldlevelstart=20  " Don't start off with everything folded
-set nocompatible  " Enable vim-only features
+noremap U <C-R>       " Redo with Shift+U instead of CTRL+R
+set clipboard=unnamed " Allow copy-pasting across different vim instances
+set foldlevelstart=20 " Don't start off with everything folded
+set nocompatible      " Enable vim-only features
 set shellcmdflag=-ic  " Allow Bash aliases to be run
-set shortmess+=I  " Turn off startup message
-set ignorecase  " Searches are case-insensitive by default
-set smartcase   " Searches are case-insensitive by default
+set shortmess+=I      " Turn off startup message
+set ignorecase        " Searches are case-insensitive by default
+set smartcase         " Searches are case-insensitive by default
 
 " Swapfiles are more trouble than they're worth. They're disruptive
 set noswapfile
@@ -60,7 +74,7 @@ let g:lightline =
   \ {
   \   'colorscheme': 'molokai',
   \   'active': {
-  \     'left': [[ 'mode' ], ['readonly', 'filename', 'modified']],
+  \     'left': [[ 'mode', 'paste' ], ['readonly', 'filename', 'modified']],
   \     'right': [['gitbranch']]
   \   },
   \   'component_function': {'gitbranch': 'fugitive#head'},
@@ -75,4 +89,7 @@ if executable('rg')
 endif
 
 " Force yourself to use vim correctly
-let g:hardtime_default_on = 1
+" let g:hardtime_default_on = 1
+
+" Shortcut key for fzf
+nnoremap <C-P> :FZF<CR>
